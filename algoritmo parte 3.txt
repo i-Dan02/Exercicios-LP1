@@ -1,0 +1,32 @@
+Aluno: Igor Daniel Rocha de Jesus
+202410511
+Ciência Da Computação
+
+
+** PARTE 3 **
+
+- Imprime mensagem mostrando os deveres do empregador
+  - Imprime deveres do empregador
+
+- Imprime mensagem mostrando os direitos do empregador
+  - Imprime os direitos do empregador
+
+- Imprime mensagem mostrando os elementos que incidem  na folha de pagamento do empregador
+
+- Declaração das variáveis que serão usadas para calcular a fração de férias, o décimo terceiro e o fgts do empregador.
+
+- Usuário digita o faturamento mensal da empresa
+
+- Verifica se o faturamento digitado é igual a 0
+  - Se for, exibe mensagem de valor inválido
+
+- Verifica se o valor digitado é maior que 0
+  - Se for, calcula a fração de férias multiplicando o faturamento da empresa por uma porcentagem
+  - Calcula também, o décimo terceiro, fazendo a divisão do faturamento por 12 e multiplicando por uma porcentagem
+  - Calcula o FGTS, multiplicando o faturamento por uma porcentagem
+
+- Imprime mensagem informando que a seguir, virá a tabela de descontos que incidem na folha de pagemento do empregador
+
+- Imprime tabela da folha de pagamento do empregador
+
+- Fim do programa

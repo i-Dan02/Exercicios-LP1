@@ -1,0 +1,46 @@
+Aluno: Igor Daniel Rocha de Jesus
+202410511
+Ciência Da Computação
+
+
+** PARTE 2 **
+
+- Declareção das variáveis, como taxa de FGTS, transporte, vale-alimentação, plano de saúde, vale-transporte, conta de luz, imposto de renda, salário líquido2.
+
+- O usuário digita um valor na entrada de valor do plano de saúde.
+
+- Lê valor do plano de saúde
+
+- Declaração da variável inss atribuindo valor 0 inicialmente.
+
+- Calcula o valor do INSS de acordo com faixas, com base no valor do salário bruto digitado anteriormente:
+  - Se o valor do salário bruto for menor ou igual a 1302.00
+    - Exibe uma mensagem de que não há parcela a deduzir;
+  - Se o valor do salário bruto estiver entre 1302.01 e 2579.29
+    - Agrega à variável inss o valor de 9% do salário bruto inicial
+  - Se o valor do salário bruto estiver entre 2579.30 e 3856.94
+    - Agrega à variável inss o valor de 12% do salário bruto inicial
+  - Se o valor do salário bruto estiver entre 3854.95 e 7507.49
+    - Agrega à variável inss o valor de 14% do salário bruto inicial
+  - Se o valor do salário bruto for maior que 7507.49
+    - Agrega à variável inss o valor 856.46
+
+- O usuário digita o valor da conta de luz (Coelba) e do vale transporte.
+
+- Lê o valor digitado pelo usuário da conta de luz e do vale transporte.
+
+- Calcula o valor do FGTS.
+
+- Calcule o salário líquido subtraindo os descontos (INSS, plano de saúde, vale transporte, Coelba, FGTS) do salário bruto e somando o valor do vale alimentação e o desconto FGTS.
+
+- Calcula o valor total de imposto de renda retido na fonte (IRRF).
+
+- O usuário digita a média salarial anual do colaborador para calcular férias, décimo terceiro e FGTS multa recisória.
+
+- Calcula o valor do INSS e do IRRF a serem descontados do salário de férias, considerando as respectivas faixas de dedução.
+
+- Calcula o valor das férias adicionais e do décimo terceiro.
+
+- Calcula a provisão de multa rescisória sobre o FGTS.
+
+- Imprime uma tabela com os valores e descontos que incidem na folha de pagamento do empregado.

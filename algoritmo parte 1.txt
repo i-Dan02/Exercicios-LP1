@@ -1,0 +1,19 @@
+Aluno: Igor Daniel Rocha de Jesus
+202410511
+Ciência Da Computação
+
+** PARTE 1 **
+
+- Declaração de variáveis "salBruto" (salário bruto), "salLiquido" (salário líquido), "aliq2", "aliq3", "aliq4" e "aliq5" (alíquotas de imposto de renda).
+- O usuário digita o salário Bruto na entrada de valor (Salário bruto na variável "salBruto")
+- Lê o valor da variável e adiciona o valor à variável salBruto
+- Verifica se a variável é igual a 0. Caso seja, fim do programa, e exibe mensagem de tente novamente.
+- Se a variável for maior que 0, verifica em qual faixa ela se localiza.
+
+  - Se o salário for menor que 1903.98, exibe mensagem: "Insento de Imposto de renda!";
+  - Se o salário estiver entre R$ 1.903,99 e R$ 2.826,65, é calculado a alíquota de 7,5% menos o valor de dedução e exibe tabela;
+  - Se o salário estiver entre R$ 2.826,66 e R$ 3.751,05, é calculado a alíquota de 15% menos o valor de dedução e exibe a tabela;
+  - Se o salário estiver entre R$ 3.751,06 e R$ 4.664,68, é calculado a alíquota de 22,5% 
+ menos o valor de dedução e exibe a tabela;
+  - Se o salário for maior que R$ 4.664,68, é calculado a alíquota de 27,5% menos o valor de dedução e exibe a tabela.
+- É calculado o valor do salário líquido: Salário bruto - Imposto.

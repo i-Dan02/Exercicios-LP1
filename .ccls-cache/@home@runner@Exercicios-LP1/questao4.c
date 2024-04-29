@@ -3,6 +3,7 @@ Igor Daniel Rocha de Jesus - 202410511
 Ciência da Computação
 
 Questão 4. Escreva um programa, usando quando necessário o operador (?), que:
+
 ➢ Declare uma variável de tipo int, vamos chamar de cha mas você pode escolher outro identificador se achar mais apropriado;
 
 ➢ Peça ao usuário para digitar um números inteiros positivo, obtenha-o da entrada padrão, usando scanf, e atribua os valores digitados à variável cha; (se o valor fornecido for negativo, converter no correspondente valor positivo);

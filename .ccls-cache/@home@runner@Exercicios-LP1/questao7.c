@@ -5,6 +5,7 @@ Igor Daniel Rocha de Jesus
 Questão 7. Escreva um programa que leia um número inteiro e, utilizando o operador %, converta ele num valor entre 1 e 6. Imprima o resultado na tela;
 
 /*/
+
 #include <stdio.h>
 
 int main() {

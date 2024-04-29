@@ -59,6 +59,5 @@ int main() {
 
   printf("O resultado da divisão de %d e %d é igual a %d.\n", a, b, c);
 
-  
   return 0;
 }

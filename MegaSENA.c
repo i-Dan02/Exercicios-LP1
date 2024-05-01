@@ -1,81 +1,38 @@
-// Igor Daniel Rocha de Jesus
-// 202410511
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include<time.h>
 
 int main() {
+  int i, j ;
+  int v2[6] ;
+  int sorteados[60];
+  int contSort = 1;
 
-  int NumSORTEADOS = 6;
-  int NumMegaSENA = 60;
-
-  printf("\x1b[32mMega Sena\x1b[37m\n");
-  printf("Digite 6 números de 1 a 60\n");
-
-  int numero1, numero2, numero3, numero4, numero5, numero6;
-
-  scanf(" %d %d %d %d %d %d", &numero1, &numero2, &numero3, &numero4, &numero5,
-        &numero6);
-
-  while (numero1 > 60 || numero2 > 60 || numero3 > 60 || numero4 > 60 ||
-         numero5 > 60 || numero6 > 60) {
-    printf("Número maior que 60, digite novamente: ");
-    scanf(" %d %d %d %d %d %d", &numero1, &numero2, &numero3, &numero4,
-          &numero5, &numero6);
+  for(i = 0; i < 6; i++){
+    printf("Digite seu %dº número que escolheu para o sorteio: ", i + 1);
+    scanf("%d", &v2[i]);
+    while(v2[i] < 1 || v2[i] > 60){
+      printf("Número inválido, digite novamente: ");
+      scanf("%d", &v2[i]);
+    }
   }
+
+  for (i = 0; i < 6; i++){
+    printf(" %d ", v2[i]);
+  }
+
+  printf("\n");
 
   srand(time(NULL));
 
-  int numSorteados[NumSORTEADOS];
-  for (int i = 0; i < NumSORTEADOS; i++) {
-    numSorteados[i] = 0;
-  }
-
-  int numSorteadosCont = 0;
-
-  while (numSorteadosCont < NumMegaSENA) {
-    int numSorteado = rand() % NumMegaSENA + 1;
-
-    int repetido = 0;
-    for (int i = 0; i < NumSORTEADOS; i++) {
-      if (numSorteados[i] == numSorteado) {
-        repetido = 1;
-      }
-    }
-
-    if (!repetido) {
-      numSorteados[numSorteadosCont] = numSorteado;
-      numSorteadosCont++;
-
-      printf("Numero sorteado: %d\n", numSorteado);
-    } else {
-      printf("Numero repetido: %d\n", numSorteado);
-    }
-
-    if (numero1 == numSorteado) {
-      printf("Parabéns, você acertou o primeiro número: %d\n", numero1);
-    }
-
-    if (numero2 == numSorteado) {
-      printf("Parabéns, você acertou o segundo número: %d\n", numero2);
-    }
-
-    if (numero3 == numSorteado) {
-      printf("Parabéns, você acertou o terceiro número: %d\n", numero3);
-    }
-
-    if (numero4 == numSorteado) {
-      printf("Parabéns, você acertou o quarto número: %d\n", numero4);
-    }
-
-    if (numero5 == numSorteado) {
-      printf("Parabéns, você acertou o quinto número: %d\n", numero5);
-    }
-
-    if (numero6 == numSorteado) {
-      printf("Parabéns, você acertou o sexto número: %d\n", numero6);
+  while (contSort > 0 ){
+  for (j = 0; j < 6; j++){
+    sorteados[j] = 1 + rand() % 60;
+    printf("\nSorteado: %d ", sorteados[j]);
+    contSort ++;
+    if (v2[0] == sorteados[j] || v2[1] == sorteados[j] || v2[2] == sorteados [j] || v2[3] == sorteados[j] || v2[4] == sorteados[j] || v2[5] == sorteados[j]){
+      printf("Acertou! Precisou de %d sorteios", contSort); 
     }
   }
-  return 0;
+}
 }

@@ -14,13 +14,15 @@ int main() {
     while(v2[i] < 1 || v2[i] > 60){
       printf("Número inválido, digite novamente: ");
       scanf("%d", &v2[i]);
+      for (int j = 0; j < i; j++) {
+      if (v2[i] == v2[j]) {
+          printf("Numero ja escolhido, digite outro numero: ");
+          i--; 
+          break;
+  }
     }
   }
-
-  for (i = 0; i < 6; i++){
-    printf(" %d ", v2[i]);
   }
-
   printf("\n");
 
   srand(time(NULL));

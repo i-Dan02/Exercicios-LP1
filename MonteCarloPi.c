@@ -30,7 +30,7 @@ int main() {
     for (int i = 0; i < numTotalSort; i++) {
         double x = (double)rand() / RAND_MAX;
         double y = (double)rand() / RAND_MAX;
-        if (pow(y,2) + pow(x,2) <= 1) // Verifica se os pontos sorteados estão dentro está dentro da circunferência de raio r =1
+        if (pow(y,2) + pow(x,2) <= 1) // Verifica se os pontos sorteados estão dentro da circunferência de raio r =1
             NumPontos++;
         
     }

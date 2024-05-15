@@ -1,0 +1,14 @@
+ALGORITMO QUESTÃO 8
+
+- Declara variáveis
+- Imprime mensagem para usuário digitar número inteiro
+- Lê número digitado pelo usuário
+- Condição (if)
+* Se o número for menor ou igual a 0, digite o número novamente
+- Loop (for)
+* Declara 'i' e atribui valor 1 à variável
+* Fim do loop, quando 'i' for maior que 'n'
+* Enquanto não acaba o loop, valor de 'i++'
+* Soma valor da variável 'soma' ao valor de 'i' até que 'i' seja maior que 'n'
+- Imprime resultado das somas
+- Fim do programa

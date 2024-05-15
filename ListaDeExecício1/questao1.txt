@@ -1,0 +1,54 @@
+1 Defina, descreva e explique:
+➢ Linguagem de Programação;
+1..1 Contexto histórico e as várias vertentes de programação
+➢ Níveis de Linguagens de Programação;
+➢ Compilador;
+➢ Algoritmos e suas características;
+
+// Igor Daniel Rocha de Jesus 
+202410511
+Linguagem de Programação
+
+  Linguagem de programação é um conjunto de símbolos e códigos usados para orientar a 
+programação de estruturas no desenvolvimento da web. Permite que um programador escreva 
+um conjunto de ordens, ações consecutivas, dados e algoritmos para criar programas que 
+controlam o comportamento lógico de uma máquina.
+  O primeiro trabalho de uma linguagem de programação foi de Ada Lovelace, no projeto da 
+primeira calculadora mecânica programável, junto a Charles Babbage que após gastar 
+fortunas, não conseguiu completar o projeto. A linguagem de programação ADA, foi em 
+homenagem a primeira programadora.
+  A primeira linguagem de programação de alto nível amplamente usada foi Fortran, 
+criada em 1954.
+  Em 1957 foi criada B-0, sucessora da A-0, que originaria a Flow-Matic em 1958, 
+antecessor imediato de COBOL, 1959. O COBOL foi uma linguagem para uso comercial.
+  
+  As linguagens de programação podem ser classificadas em dois tipos principais:
+
+- linguagens de baixo nível: 
+* São facilmente compreendidas pela máquina, mas são complicadas para compreenssão humana.
+Ex.: Linguagem de máquina e linguagem de montagem.
+
+- linguagens de alto nível:
+* São mais abstratas e fáceis de serem compreendidas pelos humanos.
+Ex.: Java, Python, C++ e etc...
+
+COMPILADOR
+Um compilador é um programa de computador que, a partir de um código fonte escrito em uma
+linguagem compilada, cria um programa semanticamente equivalente, porém escrito em outra
+linguagem. Traduz um programa de uma linguagem textual facilmente entendida por um ser humano
+para uma linguagem de máquina , específica para um processador e sistema operacional. De uma 
+linguagem de alto nível para uma de baixo nível. 
+
+ALGORITMOS
+Conjunto de regras que provê uma sequência de operações para resolver um tipo de problema
+específico. O programa de software precisa seguir uma sequência de passos para fazer o 
+computador realizar exatamente aquilo que desejamos. 
+Características de um algoritmo:
+– Ele precisa ter fim;
+– Sem margem para dupla interpretação;
+– Capacidade de receber dados de entrada do mundo exterior;
+– Poder gerar informações de saída para o mundo externo ao do ambiente do algoritmo;
+– Ser efetivo;
+Podem ser escritos de diversas formas. As mais usadas são:
+– Pseudocódigo
+– Fluxograma

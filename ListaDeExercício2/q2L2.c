@@ -3,7 +3,7 @@ Q2. Crie um programa qual entre com argumentos e desenvolva funções que:
 2.1 Transforme Celsius e Farenheit a depender da escolha;
 /*/
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 
 double celsiusF(double celsius){

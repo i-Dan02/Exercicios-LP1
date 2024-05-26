@@ -5,7 +5,6 @@ Q2. Crie um programa qual entre com argumentos e desenvolva funções que:
 #include <stdio.h>
 #include <stdlib.h>
 
-
 double celsiusF(double celsius){
   return celsius = (celsius * 9/5) + 32;
 }

@@ -9,7 +9,6 @@ Questão 6. Crie um programa qual entre com argumentos e desenvolva funções qu
 #include <stdlib.h>
 #include <time.h>
 
-
 #define DadoMAX 6 
 
 int sortDado() {

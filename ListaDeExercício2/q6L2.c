@@ -31,7 +31,6 @@ int sortN() {
     return sorteios;
 }
 
-
 void contSort(int reps) {
     int cont[DadoMAX] = {0};
 

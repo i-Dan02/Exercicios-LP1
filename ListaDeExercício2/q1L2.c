@@ -120,7 +120,7 @@ void perfeito(int valor){
 
 int main(int argc, char *argv[]){
     if (argc != 2){
-        printf("Número de argumentos inválidos!\nTente ./main valor: %s\n", argv[0]);
+        printf("Número de argumentos inválidos!\nTente ./main <valor>: %s\n", argv[0]);
         return 1;
     }
     int valor = atoi(argv[1]);

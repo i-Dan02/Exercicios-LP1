@@ -1,0 +1,9 @@
+a = int(input("Digite um número inteiro para a:"))
+b = int(input("Digite um número inteiro para b:"))
+c = float(input("Digite um numero real para c:"))
+x = (2*a) * (b/2)
+y = 3*a + c
+z = c**3
+print("Resultado x= ", x)
+print("Resultado y= ", y)
+print("Resultado z= ", z)

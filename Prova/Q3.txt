@@ -1,0 +1,89 @@
+Aluno: Igor Daniel Rocha de Jesus
+Matrícula: 202410511
+
+
+Questão 3. (peso 3,5) Defina, descreva e explique:
+a) Uma nova linguagem de programação estruturada, atenção aos detalhes;
+b) Prove que a linguagem é capaz de ser aplicada;
+
+a) 
+Uma nova linguagem de programação estruturada fornece uma estrutura clara e altamente legível, facilitando 
+a compreensão. Linguagem de programação estruturada permite aos desenvolvedores escreverem códigos organizados 
+utilizando loops, condicionais, funções e etc... Essas linguagens incentivam a escrita de código  modular 
+e reutilizável, facilitando também a manutenção do código.
+
+* Algumas características que determinam uma linguagem de programação estruturada consiste na utilização de 
+controles de fluxo estruturado, que são as condicionais e as estruturas de repetição(loops). São elas as mais
+conhecidas:
+
+- Condicionais: Verificam uma condição, alterando o fluxo de execução do algoritmo. Exemplos: if, else, switch.
+
+- Loops: permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição.
+Exemplos: for, while, do-while.
+
+* Outra característica é o uso de funções e procedimentos para dividir o código em partes menores e mais gerenciáveis.
+O uso de funções também evita a repetição de comandos que sem o uso delas, podem vir a se repetir de acordo com o 
+fluxo do código.
+
+* Variáveis locais e globais para controlar a visibilidade e o tempo de vida das variáveis.
+
+* O código é executado de cima para baixo, a menos que estruturas de controle alterem esse fluxo.
+
+Exemplos de linguagens de programação estruturada: C, Python, Pascal.
+
+Essa nova linguagem teria sintaxe limpa e coerente, usando indentação para delimitar blocos de código, similar ao Python, 
+controles de fluxos estruturado, uso de funções e procedimentos para dividir o código, bibliotecas padrão.
+
+
+b) 
+
+module math; //Biblioteca
+
+void Menu() {
+    print("Escolha a operação que deseja realizar: ");
+    print("1. Adição");
+    print("2. Subtração");
+    print("3. Multiplicação");
+    print("4. Divisão");
+    int op;
+    read(op);
+    while (op < 1 and op > 4){
+        print("Digite novamente: ");
+        read(op);
+}
+
+void CalculOp(int op) {
+    float a = ("Enter first number: ");
+    float b = ("Enter second number: ");
+    float result;
+
+    if (op = 1){
+            res = a + b;
+            print("Resultado: ", res);
+    }
+    
+    if (op = 2){
+            res = a - b;
+            print("Resultado: ", res);
+    }
+    
+    if (op = 3){
+            res = a * b;
+            print("Resultado: ", res);
+    }
+
+    if (op = 4){
+            res = a / b;
+            print("Resultado: ", res);
+    }
+    return res;
+}
+
+int main() {
+    Menu(op)
+    CalculOp(res)
+    
+    return 0;
+}
+
+Assim a nova linguagem de programação estruturada LOUBm é capaz de ser aplicada.

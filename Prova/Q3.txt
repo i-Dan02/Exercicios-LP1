@@ -34,8 +34,40 @@ Exemplos de linguagens de programação estruturada: C, Python, Pascal.
 Essa nova linguagem teria sintaxe limpa e coerente, usando indentação para delimitar blocos de código, similar ao Python, 
 controles de fluxos estruturado, uso de funções e procedimentos para dividir o código, bibliotecas padrão.
 
+Lógica:
 
-b) 
+module: importa biblioteca;
+print(): função que imprime dados na tela;
+write(): função que lê dados fornecidos pelo usuário;
+
+Chamar função:
+Exemplo:
+void function(){
+    int var;
+    ...
+    ...
+
+    return int;
+}
+
+int function(int){
+    print(var)
+
+    return 0;
+}
+
+Apenas um exemplo de como usar função nessa linguagem de programação.
+
+Tipos de dados/variáveis
+int: número inteiro
+float: número real
+char: qualquer caractere
+dob: ponto flutuante de dupla precisão
+vect: vetores
+
+
+b) A seguir, um exemplo da aplicação dessa nova linguagem. 
+Calculadora SIMPLES;
 
 module math; //Biblioteca
 
@@ -46,10 +78,12 @@ void Menu() {
     print("3. Multiplicação");
     print("4. Divisão");
     int op;
-    read(op);
+    write(op);
     while (op < 1 and op > 4){
         print("Digite novamente: ");
-        read(op);
+        write(op);
+
+    return op;
 }
 
 void CalculOp(int op) {

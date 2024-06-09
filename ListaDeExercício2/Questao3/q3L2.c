@@ -6,7 +6,12 @@ Questão 3. Crie um programa qual entre com argumentos e desenvolva funções qu
 #include <stdio.h>
 #include <stdlib.h>
 
-
+/**
+*@brief: Função que calcula o MDC
+*@param a: Primeiro número
+*@param b: Segundo número
+*@retval mdc: retorna o menor divisor comum entre o número a e o número b digitado
+*/
 int calcularMDC(int a, int b) {
     int menor = (a < b) ? a : b; 
     int mdc = 1; 
@@ -19,6 +24,12 @@ int calcularMDC(int a, int b) {
     return mdc;
 }
 
+/**
+*@brief: Função principal
+*@param argc: Quantidade de argumentos
+*@param argv: Argumentos
+*@retval int: Retorna 0 se o programa rodar corretamente
+*/
 int main(int argc, char *argv[]) {
     if (argc != 3) {
         printf("Faça: %s <numero1> <numero2>\n", argv[0]);

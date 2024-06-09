@@ -1,8 +1,3 @@
-/*/
-Questão 3. Crie um programa qual entre com argumentos e desenvolva funções que:
-3.1 Calcule o máximo divisor comum (MDC);
-  /*/
-
 #include <stdio.h>
 #include <stdlib.h>
 

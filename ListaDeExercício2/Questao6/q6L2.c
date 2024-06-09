@@ -1,20 +1,21 @@
-/*/
-Questão 6. Crie um programa qual entre com argumentos e desenvolva funções que:
-6.1 Retorne o número sorteado de um dado;
-6.2 Verifique o número de sorteios necessários para que sejam sorteados todos os números, por pelo menos 1 vez;
-6.3 Em uma quantidade grande de repetições (1 milhão ou mais, informada via argumento), quantas vezes cada valor foi sorteado;
-/*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 #define DadoMAX 6 
-
+/**
+*@brief Função que sorteia um dos 6 lados de um dado
+*@param rand: função que randomiza números entre 1 e 6
+*@retval None: não retorna valores
+*/
 int sortDado() {
     return rand() % DadoMAX + 1;
 }
 
+/**
+*@brief Função que sorteia e permite repetição
+*@retval sorteios: Retorna um dos números sorteados 
+*/
 int sortN() {
     int sorteios = 0;
     int cont[DadoMAX] = {0};
@@ -31,6 +32,10 @@ int sortN() {
     return sorteios;
 }
 
+/**
+*@brief Função que conta a quantidade de sorteios e números sorteados e os imprime 
+*@param reps: quantidade de sorteios
+*/
 void contSort(int reps) {
     int cont[DadoMAX] = {0};
 
@@ -45,6 +50,12 @@ void contSort(int reps) {
     }
 }
 
+/**
+*@brief Função principal
+*@param argc: Quantidade de argumentos
+*@param argv: Argumentos
+*@return int: retorna 0 caso o código seja executado corretamante
+*/
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         printf("Uso: %s <quantidade_repeticoes>\n", argv[0]);

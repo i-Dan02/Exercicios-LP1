@@ -1,14 +1,12 @@
-/*/
-Questão  5. Crie um programa qual entre com argumentos e desenvolva funções que:
-5.1 Calcule o valor líquido do salário à ser recebido por um colaborador;
-5.2 Calcule o valor total do salário à ser pago a um colaborador, por parte da empresa;
-/*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
-
+/**
+*@brief Função que calcula o salário a partir do salário bruto
+*@param hora: armazena valor do argumento 1 em hora
+*@param dia: armazena valor do argumento 2 em dia
+*@retval salario: Retorna valor do salário
+ */
 double salarioLiquido(int hora, int dia){
   //Vamos supor que a empresa paga R$20,00 por hora trabalhada no mês.
 
@@ -57,7 +55,12 @@ double salarioLiquido(int hora, int dia){
   return salario;
 }
   
-
+/**
+*@brief Função principal
+*@param argc: Quantidade de argumentos
+*@param argv: Argumentos
+*@retval int: Retorna 0 caso o código seja executado corretamente
+*/
 int main(int argc, char *argv[]){
   if (argc != 3){
     printf("Número de argumentos inválido.\n");
@@ -77,4 +80,6 @@ int dia = atoi(argv[2]);
   double salario = salarioLiquido(hora, dia);
   printf("O salário líquido é: R$ %.2f\n", salario);
 
+
+   return 0;
 }

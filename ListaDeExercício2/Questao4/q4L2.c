@@ -1,17 +1,24 @@
-/*/
-4 Crie um programa qual entre com argumentos e desenvolva funções que:
-4.1 Calcule o índice de massa corporal (IMC);
-4.2 Deve apresentar resultado determinado pela faixa etária
-/*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-  double calcularIMC(int peso, double altura){
+/**
+*@brief Função que calcula o IMC
+*@param peso: Armazena peso digitado pelo usuário
+*@param altura: Armazena altura digitada pelo usuário
+*@retval imc: Retorna cálculo do IMC
+*/
+double calcularIMC(int peso, double altura){
   double imc = (peso / (altura * altura)) ;
   return imc;
 }
+
+/**
+*@brief Função principal
+*@param argc: Quantidade de argumentos
+*@param argv: Argumentos
+*@retval int: Retorna 0 caso o código seja executado corretamente
+ */
 int main(int argc, char *argv[]) {
   if (argc != 3){
     printf("Informe peso e altura", argv[0]);

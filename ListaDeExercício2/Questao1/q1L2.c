@@ -1,21 +1,14 @@
-/*/
-Questão 1. Crie um programa qual entre com um argumento e desenvolva funções que:
-1.1 Verifique se é um valor numérico ou alfanumérico, e ou nulo;
-1.2 Mostrar na tela os valores sequencialmente, até o valor informado;
-1.3 Mostrar na tela os valores sequencialmente, até o valor informado na ordem inversa;
-1.4 Mostrar na tela os valores até o valor informado, alternando entre primeiro e último;
-1.5 Calcular todos os números primos, até o valor informado;
-1.5.1 Número primo é aquele que é divisível somente por 1 e por ele mesmo.
-1.6 Calcular todos os números perfeitos, até o valor informado;
-1.6.1 Número perfeito é aquele que é a soma de seus fatores. Por exemplo, 6 é divisível por 1, 2 e 3 ao passo que 6 = 1 + 2 + 3
-/*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 #include <stdbool.h>
 
+    /**
+     *@brief Verifica e imprime se o caractere é uma letra ou um número
+     @param str: string a ser analisada
+     @retval void
+    */
 void verify(const char *str) {
     bool num = true;
     bool alfaNum = true;
@@ -25,7 +18,7 @@ void verify(const char *str) {
         printf("O valor é nulo.\n");
         return;
     }
-    
+
     for (int i = 0; str[i] != '\0'; i++) {
         //isdigit é uma função que verifica se o caractere é um dígito
         if (!isdigit(str[i])) {
@@ -46,9 +39,13 @@ void verify(const char *str) {
     else {
         printf("NULO.\n");
     }
-  
+
 }
 
+/**
+*@brief Imprime os números em sequência
+*@param valor: valores que serão impressos em sequência
+*/
 void sequencia(int valor) {
     printf("Sequência até %d:\n", valor);
     for (int i = 1; i <= valor; i++){
@@ -56,6 +53,10 @@ void sequencia(int valor) {
     }
 }
 
+/**
+*@brief Função que imprime os números em sequência na ordem inversa
+*@param valor: valores que serão impressos em sequência na ordem inversa
+*/
 void sequenciaInv(int valor){
     printf("Sequência até %d na ordem inversa:\n", valor);
     for (int i = valor; i >= 1; i--){
@@ -63,6 +64,10 @@ void sequenciaInv(int valor){
     }
 }
 
+/**
+*@brief Função que imprime os números de forma alternada
+*@param valor: valores que serão impressos de forma alternada
+*/
 void valoresAlternados(int valor){
     printf("Valores alternados até %d:\n", valor);
     int inicio = 1;
@@ -77,8 +82,12 @@ void valoresAlternados(int valor){
     }
 }
 
-//Função bool retorna true ou false
-bool VerificaPrimo(int num) {
+/**
+*@brief Função que verifica os números primos de 1 ao valor
+*@param num: valores que serão verificados se são números primos
+*retval true: se o número for primo
+*/
+    bool VerificaPrimo(int num) {
     if (num <= 1) return false;
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) return false;
@@ -86,6 +95,10 @@ bool VerificaPrimo(int num) {
     return true;
 }
 
+/**
+*@brief Imprime os números primos de 1 até o valor	
+*@param valor: valores que serão impressos
+*/
 void primo(int valor){
     printf("Números primos até %d:\n", valor);
     for (int i = 2; i <= valor; i++){
@@ -94,6 +107,12 @@ void primo(int valor){
         }
     }
 }
+
+/**
+*@brief Função que verifica os números perfeitos
+*@param num: valores que serão verificados se são perfeitos
+*retval int: se o número for perfeito
+*/
 
 bool VerificaPerfeito(int num) {
     if (num <= 1) return false;
@@ -109,6 +128,10 @@ bool VerificaPerfeito(int num) {
     return soma == num;
 }
 
+/**
+*@brief Função que imprime os números perfeitos de 1 até o valor
+*@param valor: valores que serão impressos
+*/
 void perfeito(int valor){
     printf("Números perfeitos até %d:\n", valor);
     for (int i = 1; i <= valor; i++) {
@@ -118,6 +141,12 @@ void perfeito(int valor){
     }
 }
 
+/**
+*@brief Função principal
+*@param argc: quantidade de argumentos
+*@param argv: argumentos
+*@retval int: retorna 0 se o programa rodar corretamente
+*/
 int main(int argc, char *argv[]){
     if (argc != 2){
         printf("Número de argumentos inválidos!\nTente ./main <valor>: %s\n", argv[0]);
@@ -139,6 +168,6 @@ int main(int argc, char *argv[]){
     valoresAlternados(valor);
     primo(valor);
     perfeito(valor);
-    
+
     return 0;
 }

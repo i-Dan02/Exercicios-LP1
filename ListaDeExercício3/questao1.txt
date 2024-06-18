@@ -1,0 +1,37 @@
+Igor Daniel Rocha de Jesus
+Ciência da Computação
+
+1 Defina, descreva e explique:
+        ◦ Array;
+        ◦ Armazenamento em memória de um Array unidimensional e bidimensional;
+        ◦ String e suas funções de manipulações;
+
+1. Array é um conjunto de daods que podem assumir diversos tipos. São uilizados
+para armazenar mais um valor em uma única variável. Podemos pensar em um array
+de uma dimensão, como um vetor, e de mais de uma dimensão, como uma matriz.
+
+A declaração de arrays pode ser feita da seguinte
+forma:
+ <tipo> <nomeDoarray>[x];
+Exemplos da declaração de array unidimensional:
+ int meuArray[5]; 
+Exemplos da declaração de array bidimensional:
+ int meuArray[5][10];
+
+Para usar as funções de manipulação de strings, temos que usar a biblioteca
+string.h, da seguinte forma:
+
+#include<string.h>
+
+A biblioteca apresenta as seguintes funções:
+
+strlen(s): devolve o comprimento da string s. Note que o comprimento não 
+inclui o caractere nulo no final da string.
+
+strcpy(dst, src): coloca na string dst uma cópia da string src.
+
+strcat(dst, src): anexa uma cópia da string src à string dst. Se src = "abc" e 
+dst = "123", após a chamada teremos dst = "123abc".
+
+strcmp(a, b): devolve um número negativo, se a < b, zero, se a == b, e um número 
+positivo, se a > b. Aqui, a ordem considerada para as comparações é a ordem lexicográfica.
